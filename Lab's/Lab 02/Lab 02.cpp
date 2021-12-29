@@ -12,15 +12,26 @@ using namespace std;
 
 int main()
 {
-    double mass0 = 1125;
-    double time0 = 20.5;
-    int daysMassive[6] = { 1, 2, 5, 10, 20, 50 };
-    double DeltaMass;
-    for (int i = 0; i < 6; i++)
-    {
-        DeltaMass = mass0 * exp(-(log(2) / time0) * daysMassive[i]) * (exp(log(2) / time0) - 1);
+    int mass = 75;
+    int KoefResist = 8;
+    double time = 0;
+    double SpeedUpPowerWeight = 9.80665;
+    double Speed;
+    while (time < 5) {
+        Speed = sqrt((SpeedUpPowerWeight * mass) / KoefResist) * tanh(time * sqrt((SpeedUpPowerWeight * KoefResist) / mass));
         cout.precision(4);
-        cout << DeltaMass << endl;
+        cout << time << "\t" << Speed << endl;
+        time += 0.25;
+        if (time == 1) {
+            break;
+        }
     }
-    
+    do {
+        Speed = sqrt((SpeedUpPowerWeight * mass) / KoefResist) * tanh(time * sqrt((SpeedUpPowerWeight * KoefResist) / mass));
+        cout.precision(4);
+        cout << time << "\t" << Speed << endl;
+        time += 1;
+    } while (time <= 5);
+
+        
 }
