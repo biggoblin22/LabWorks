@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.29.30133:TargetPlatformVersion=10.0.19041.0:
 Debug|Win32|C:\Users\biggo\Desktop\Новая папка\Lab 03\Lab 3\|
+=======
+PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.29.30133:TargetPlatformVersion=10.0.19041.0:
+Debug|Win32|C:\Users\biggo\Desktop\Новая папка\Lab 03\Lab 3\|
+>>>>>>> 5fabef4b6fbb3402c6939148e8bccbfb38156b92
